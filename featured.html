@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancient Civilizations - Featured</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      text-align: right;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    main {
+      padding: 100px 0 20px 0;
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .featured-civilizations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .featured-civilization {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .featured-civilization img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .learn-more {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .learn-more:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .featured-civilization-content {
+      margin-top: 20px;
+    }
+
+    .featured-civilization-content h3 {
+      margin-top: 10px;
+    }
+
+    .featured-civilization-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .featured-civilization-content img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .featured-civilization-content .primary-source,
+    .featured-civilization-content .expert-insights,
+    .featured-civilization-content .resources {
+      margin-top: 20px;
+    }
+
+    .search-container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .search-container input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ancient Civilizations</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="civilizations.html">Civilizations</a></li>
+        <li><a href="featured.html">Featured</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Featured Civilizations</h2>
+      <p>Our selection of the most intriguing ancient civilizations.</p>
+
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for civilizations...">
+      </div>
+
+      <div class="featured-civilizations">
+        <div class="featured-civilization" id="egypt" data-civilization="Egypt">
+          <img src="https://i.ibb.co/qYDZMT4D/44918290541-2e04d43a20-b.jpg" alt="44918290541-2e04d43a20-b" border="0">
+          <h3>Egypt</h3>
+          <p>Discover the wonders of ancient Egypt, from the pyramids to hieroglyphics.</p>
+          <a href="egypt.html" class="learn-more">Learn More</a>
+          <div class="featured-civilization-content">
+            <h3>Detailed Information</h3>
+            <p>Ancient Egypt was a civilization that thrived for over 3,000 years along the Nile River. Known for its impressive architecture, advanced mathematics, and rich cultural heritage.
+            The history of ancient Egypt is divided into distinct periods, marked by different dynasties and rulers. The Old Kingdom (c. 2686-2181 BC) saw the construction of the great pyramids, the Middle Kingdom (c. 2055-1650 BC) was a period of stability and prosperity, and the New Kingdom (c. 1550-1069 BC) was a time of expansion and military prowess.</p>
+            <p>Ancient Egyptian culture was deeply intertwined with religion. They believed in a complex pantheon of gods and goddesses, and their lives were heavily influenced by their beliefs in the afterlife. The use of hieroglyphics, a system of writing, and the practice of mummification are just two examples of their unique cultural practices.</p>
+            <p>The legacy of ancient Egypt is still felt today. Their advancements in mathematics, astronomy, and medicine influenced later civilizations. The iconic pyramids, temples, and tombs continue to amaze and inspire people worldwide. Their art, hieroglyphics, and stories have captivated the imagination for centuries.</p>
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="https://www.history.com/topics/ancient-history/ancient-egypt">History.com: Ancient Egypt</a></li>
+              <li><a href="https://www.britannica.com/topic/ancient-Egypt">Britannica: Ancient Egypt</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="featured-civilization" id="greece" data-civilization="Greece">
+          <img src="https://i.ibb.co/xqwxKp0Q/1-2-Nt-HGn-Nlk42l-Xy-KWxo1w.webp" alt="1-2-Nt-HGn-Nlk42l-Xy-KWxo1w" border="0">
+          <h3>Greece</h3>
+          <p>Explore the birthplace of democracy, philosophy, and the arts.</p>
+          <a href="greece.html" class="learn-more">Learn More</a>
+          <div class="featured-civilization-content">
+            <h3>Detailed Information</h3>
+            <p>Ancient Greece was a civilization that flourished for centuries, known for its contributions to democracy, philosophy, art, and literature.
+            The history of ancient Greece is characterized by a series of periods, including the Archaic Period (c. 800-500 BC), the Classical Period (c. 500-323 BC), and the Hellenistic Period (c. 323-146 BC). The Classical Period is often considered the golden age of Greek civilization, marked by the rise of great philosophers, playwrights, and artists.</p>
+            <p>Ancient Greek culture is renowned for its emphasis on reason, logic, and the pursuit of knowledge. They developed democracy, explored philosophical concepts, and produced masterpieces of literature and art. The Olympics, a series of athletic games held in honor of Zeus, were a significant part of their culture.</p>
+            <p>The legacy of ancient Greece is deeply embedded in Western civilization. Their ideas about democracy, philosophy, and art continue to influence our world today. The Greek language and literature are studied in universities around the world. Their architecture, with its iconic columns and temples, has inspired buildings for centuries.</p>
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="https://www.history.com/topics/ancient-history/ancient-greece">History.com: Ancient Greece</a></li>
+              <li><a href="https://www.britannica.com/topic/ancient-Greece">Britannica: Ancient Greece</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="featured-civilization" id="rome" data-civilization="Rome">
+          <img src="https://i.ibb.co/qwZrWTb/Fall-of-the-Roman-Empire.jpg" alt="Fall-of-the-Roman-Empire" border="0">
+          <h3>Rome</h3>
+          <p>Explore the rise and fall of the Roman Empire.</p>
+          <a href="rome.html" class="learn-more">Learn More</a>
+          <div class="featured-civilization-content">
+            <h3>Detailed Information</h3>
+            <p>The Roman Empire, one of the most influential civilizations in history, dominated Europe, North Africa, and the Middle East for centuries.
+            The Roman Empire was founded in 27 BC by Augustus Caesar. The Roman Republic transitioned into the Roman Empire, experiencing periods of expansion, political upheaval, and eventually, decline.</p>
+            <p>Roman culture is known for its sophisticated legal system, impressive infrastructure, and impactful contributions to art, literature, and philosophy. Their engineering skills were renowned, and they built massive structures like the Colosseum and aqueducts.</p>
+            <p>The Roman Empire left a lasting legacy on the world. Their legal system influenced many modern legal systems. Their language, Latin, is the basis for many European languages. Roman architecture and engineering continue to inspire. </p>
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="https://www.history.com/topics/ancient-history/roman-empire">History.com: Roman Empire</a></li>
+              <li><a href="https://www.britannica.com/topic/Roman-Empire">Britannica: Roman Empire</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ancient Civilizations. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('search-input');
+    const civilizationItems = document.querySelectorAll('.featured-civilization');
+
+    searchInput.addEventListener('input', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+
+      civilizationItems.forEach(item => {
+        const civilization = item.dataset.civilization.toLowerCase();
+        if (civilization.includes(searchTerm)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancient Civilizations - Home</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      text-align: right;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    main {
+      padding: 20px 0;
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .hero {
+      background-image: url("images/hero-background.jpg");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero-content {
+    }
+
+    .featured-civilizations,
+    .latest-articles,
+    .interactive-map {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .civilization-grid,
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .civilization-item,
+    .article-item {
+      text-align: left;
+    }
+
+    .civilization-item img,
+    .article-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .learn-more,
+    .read-more {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .learn-more:hover,
+    .read-more:hover {
+      background-color: #45a049;
+    }
+
+    .interactive-map {
+      text-align: center;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 400px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> 
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Ancient Civilizations</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="civilizations.html">Civilizations</a></li>
+          <li><a href="featured.html">Featured</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Welcome to Ancient Civilizations</h2>
+        <p>Explore the fascinating world of ancient societies, their history, cultures, and lasting legacies.</p>
+        <a href="featured.html" class="call-to-action">Discover Civilizations</a> 
+      </div>
+  </section>
+
+  <section class="featured-civilizations">
+    <div class="container">
+      <h2>Featured Civilizations</h2>
+      <div class="civilization-grid">
+        <div class="civilization-item">
+          <img src="https://i.ibb.co/ymkprmDw/images-2.jpg" alt="images-2" border="0">
+          <h3>Egypt</h3>
+          <p>Discover the wonders of ancient Egypt, from the pyramids to hieroglyphics.</p>
+          <a href="featured.html#egypt" class="learn-more">Learn More</a> 
+        </div>
+        <div class="civilization-item">
+        <img src="https://i.ibb.co/Hpz8Bxrr/OG-Colosseum-Ancient-Rome-KIDS-1122-square.jpg" alt="OG-Colosseum-Ancient-Rome-KIDS-1122-square" border="0">
+          <h3>Rome</h3>
+          <p>Explore the rise and fall of the Roman Empire.</p>
+          <a href="featured.html#rome" class="learn-more">Learn More</a> 
+        </div>
+        <div class="civilization-item">
+          <img src="https://i.ibb.co/fV4gjb0h/images-1.jpg" alt="images-1" border="0">
+          <h3>Greece</h3>
+          <p>Explore the cradle of democracy, philosophy, and art, where ancient Greece left an enduring legacy on Western civilization.</p>
+          <a href="featured.html#greece" class="learn-more">Learn More</a> 
+        </div>
+  </section>
+
+  <section class="latest-articles">
+    <div class="container">
+      <h2>Latest Articles</h2>
+      <div class="article-grid">
+        <div class="article-item">
+          <h3>The Mystery of the Roman Colosseum</h3>
+          <p>A closer look at the engineering marvels and secrets of the Colosseum...</p>
+          <a href="blog.html#colosseum-article" class="read-more">Read More</a> 
+        </div>
+        <div class="article-item">
+          <h3>Ancient Egyptian Hieroglyphics Deciphered</h3>
+          <p>Unveiling the secrets of ancient Egyptian writing.</p>
+          <a href="blog.html#hieroglyphics-article" class="read-more">Read More</a> 
+        </div>
+  </section>
+
+  <section class="interactive-map">
+    <div class="container">
+      <h2>Explore the World</h2>
+      <div id="map" class="map-container"></div> 
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ancient Civilizations. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> 
+  <script>
+    var map = L.map('map').setView([37.0902, -95.7129], 4); 
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var romeMarker = L.marker([41.9028, 12.4964]).addTo(map);
+    romeMarker.bindPopup("<b>Rome</b>").openPopup();
+
+    var athensMarker = L.marker([37.9795, 23.7162]).addTo(map);
+    athensMarker.bindPopup("<b>Athens</b>").openPopup();
+
+    var gizaMarker = L.marker([29.9761, 31.1300]).addTo(map);
+    gizaMarker.bindPopup("<b>Giza Pyramids</b>").openPopup();
+  </script>
+</body>
+</html>
